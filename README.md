@@ -1,24 +1,9 @@
-# README
+# Members-Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project from [The Odin Project](https://www.theodinproject.com/s://www.theodinproject.com/),
+a web curriculum for learning web development.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In this project I build a Rails 5.2.4 app that allows Members of the site to
+compose embarassing posts about non-members. Additionally only these members can
+see who wrote the posts, while others can only guess, or also register for the
+site. :)
