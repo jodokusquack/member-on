@@ -1,0 +1,8 @@
+    <%= form_with model: @post do |f| %> 
+      <%= f.label :body, "Mean Article goes here:" %><br>
+      <%= f.text_area :body, placeholder: 'I think Charles is...', size: '70x20' %><br>
+      <hr>
+
+      <%= f.submit 'Send' %>
+
+    <% end %>

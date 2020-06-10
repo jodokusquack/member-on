@@ -1,0 +1,25 @@
+<div class="block">
+  <%= link_to post_path(post) do %>
+    <div class="box">
+      <article class="media">
+        <div class="media-content">
+          <div class="content">
+            <div class="body">
+              <%= post.preview %>
+            </div>
+            <hr>
+            <div class="member">
+              <p class="content is-small">
+                Posted by:
+                <% if member_signed_in? %>
+                  <%= post.member.name %>
+                <% else %>
+                  Anonymous
+                <% end %></p> 
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  <% end %>
+</div>
