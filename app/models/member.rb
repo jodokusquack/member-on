@@ -3,7 +3,9 @@ class Member < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
   has_many :posts, dependent: :destroy
+
   validates :username, :name, presence: true
   validates :username, length: { maximum: 30 }
   validates :username, uniqueness: true
